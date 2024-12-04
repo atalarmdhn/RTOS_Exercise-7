@@ -1,8 +1,8 @@
-## RTOS Exercise 7 
+# RTOS Exercise 7 
 
 Proyek ini adalah implementasi multitasking pada mikrokontroler STM32 dengan menggunakan FreeRTOS untuk mengendalikan tiga LED dengan interval waktu yang berbeda dan mengelola data bersama antara beberapa task.
 
-# Cara Kerja 
+## Cara Kerja 
 1. Task HijauLedTask
 * Mengontrol LED hijau dengan interval 200 ms. Task ini berfungsi untuk menyalakan dan mematikan LED hijau, mengakses data bersama (startFlag) secara aman, dan memastikan tidak ada konflik dengan task lain. 
 * LED hijau menyala, lalu mengakses data bersama dengan aman. Setelah selesai, LED dimatikan, dan task tidur selama 200 ms (osDelay(200)).
